@@ -1,6 +1,6 @@
 import unittest
-from myutilpkg import factorial, is_prime, fibonacci, gcd
-from myutilpkg import is_palindrome, word_count, reverse_string, caesar_cipher
+from utilpkg import factorial, is_prime, fibonacci, gcd
+from utilpkg import is_palindrome, word_count, reverse_string, caesar_cipher
 
 class TestMathUtils(unittest.TestCase):
 
@@ -10,7 +10,7 @@ class TestMathUtils(unittest.TestCase):
             factorial(-1)
 
     def test_is_prime(self):
-        self.assertTrue(is_prime(8))
+        self.assertTrue(is_prime(7))
         self.assertFalse(is_prime(8))
         self.assertFalse(is_prime(1))
 
